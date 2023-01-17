@@ -11,13 +11,11 @@ interface HomeProps {
 export default function Home(props: HomeProps) {
   return (
     <div>
-      <h1>Blog do Diego</h1>
+      <h1>Blog do Rener</h1>
       <ul>
         {props.posts.map((post, idx) => (
           <li key={idx}>
-            <Link href={post.slug}>
-              <a>{post.title}</a>
-            </Link>
+            <Link href={post.slug}> {post.title} </Link>
           </li>
         ))}
       </ul>
